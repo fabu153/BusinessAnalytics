@@ -9,6 +9,7 @@ The **Business Data Clustering Dashboard** is an interactive Streamlit applicati
   - Handles missing values (mean for numeric, mode for categorical).
   - Scales numeric features with StandardScaler.
   - Encodes categorical features using OneHotEncoder.
+  - Removes unecessary columns (Eg. ID columns)
 - **Clustering Algorithms**:
   - **KMeans**: Automatically suggests the optimal number of clusters using the silhouette score.
   - **DBSCAN**: Recommends an optimal epsilon value based on the k-distance plot.
@@ -23,10 +24,13 @@ The **Business Data Clustering Dashboard** is an interactive Streamlit applicati
   - Export cluster insights and descriptions as CSV files.
 
 ## Installation
+- Clone repo
+- cd BusinessAnalytics
+- Streamlit run main.py
 
 ### Prerequisites
 - Python 3.8 or above
-- pip package manager
+- pip + requirements.txt
 
 ### Steps
 1. Clone this repository:
